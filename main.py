@@ -7,6 +7,8 @@ import streamlit as st
 import streamlit.components.v1 as components
 from langdetect import detect
 from helpers.utils import process_image, detect_mood
+OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
+
 
 # Hide Streamlit's default menu and footer
 hide_streamlit_style = """
